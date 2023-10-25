@@ -16,11 +16,16 @@ filesDerictoty.forEach((file) => {
 });
 
 function uniqueValues(data) {
+    const timeStart= performance.now();
   const uniq = [...new Set(data)];
+  const timeEnd=performance.now();
+  const totalTime=Math.round(timeEnd-timeStart)
+  console.log(`The total execution time of the function uniqueValues code is ${totalTime} milliseconds (or ${totalTime/1000}seconds).`)
   return uniq.length;
 }
 
 function existInAllFiles(list) {
+    const timeStart= performance.now();
   const counter = countFirstFile(list);
 
   let hitСounting = 0;
@@ -30,10 +35,14 @@ function existInAllFiles(list) {
       hitСounting++;
     }
   });
+  const timeEnd=performance.now();
+  const totalTime=Math.round(timeEnd-timeStart)
+  console.log(`The total execution time of the function existInAllFiles code is ${totalTime} milliseconds (or ${totalTime/1000}seconds).`)
   return hitСounting;
 }
 
 function existInAtleastTen(list) {
+  const timeStart= performance.now();
   const counter = countFirstFile(list);
 
   let hitСounting = 0;
@@ -43,6 +52,9 @@ function existInAtleastTen(list) {
       hitСounting++;
     }
   });
+  const timeEnd=performance.now();
+  const totalTime=Math.round(timeEnd-timeStart)
+  console.log(`The total execution time of the function existInAtleastTen code is ${totalTime} milliseconds (or ${totalTime/1000}seconds).`)
   return hitСounting;
 }
 
