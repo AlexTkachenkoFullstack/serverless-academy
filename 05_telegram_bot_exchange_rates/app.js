@@ -19,7 +19,7 @@ bot.on("message", async (msg) => {
     };
     bot.sendMessage(
       msg.from.id,
-      "Select weather or exchange rate.",
+      "Select weather or exchange rates.",
       opts
     );
   }
