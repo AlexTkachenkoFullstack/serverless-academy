@@ -1,0 +1,13 @@
+{
+  "name": "07_grouping_vacation",
+  "version": "1.0.0",
+  "description": "07_grouping_vacation",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Oleksandr Tkachenko",
+  "license": "ISC",
+  "dependencies": {}
+}
