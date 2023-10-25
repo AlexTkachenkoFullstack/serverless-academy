@@ -1,0 +1,12 @@
+{
+  "name": "06_instagram_giveaway",
+  "version": "1.0.0",
+  "description": "instagram_giveaway",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Oleksandr Tkachenko",
+  "license": "ISC"
+}
